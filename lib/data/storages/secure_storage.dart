@@ -1,7 +1,7 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
-const String ACCESS_TOKEN_KEY = "access_token";
-const String REFRESH_TOKEN_KEY = "refresh_token";
+const String ACCESS_TOKEN_KEY = 'access_token';
+const String REFRESH_TOKEN_KEY = 'refresh_token';
 
 class SecureStorage {
   const SecureStorage({

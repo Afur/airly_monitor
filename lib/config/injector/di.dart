@@ -1,8 +1,11 @@
+import 'package:airly_monitor/config/api/api_service.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
 import 'package:airly_monitor/config/injector/di.config.dart';
 
-@InjectableInit()
+@InjectableInit(ignoreUnregisteredTypes: [
+  ApiService,
+])
 class DI {
   DI._();
 
@@ -10,7 +13,8 @@ class DI {
 
   static final DI instance = DI._();
 
-  Future<void> setupInjection(String environment) async => _getIt.init(
+  Future<void> setupInjection(String environment) async => $initGetIt(
+        _getIt,
         environment: environment,
       );
 

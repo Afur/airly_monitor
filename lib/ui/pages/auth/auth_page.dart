@@ -1,14 +1,9 @@
 import 'package:airly_monitor/cubits/auth/auth_cubit.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:airly_monitor/config/injector/di.dart';
-import 'package:airly_monitor/config/styles/text_styles/app_text_styles.dart';
-import 'package:airly_monitor/cubits/counter/counter_cubit.dart';
-
 class AuthPage extends StatelessWidget implements AutoRouteWrapper {
   const AuthPage({
     Key? key,
@@ -36,13 +31,11 @@ class AuthPage extends StatelessWidget implements AutoRouteWrapper {
         },
         builder: (context, state) {
           return state.maybeWhen(
-            orElse: () => Container(
-              child: Center(
-                  child: ElevatedButton(
-                onPressed: () => context.read<AuthCubit>().authenticate(),
-                child: Text("Authenticate"),
-              )),
-            ),
+            orElse: () => Center(
+                child: ElevatedButton(
+              onPressed: () => context.read<AuthCubit>().authenticate(),
+              child: Text('Authenticate'),
+            )),
             authenticating: () => const Center(
               child: CircularProgressIndicator(),
             ),

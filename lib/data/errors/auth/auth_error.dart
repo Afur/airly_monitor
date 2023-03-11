@@ -11,9 +11,7 @@ class AuthError extends AppError with _$AuthError implements Exception {
   factory AuthError.unknownFailure(dynamic error) = _UnknownError;
 
   @override
-  String toString() {
-    return 'Use localizedTitle or localizedContent methods instead of toString()';
-  }
+  String toString() => message;
 
   @override
   String get message => when(

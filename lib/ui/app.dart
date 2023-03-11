@@ -16,10 +16,12 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return AppCoordinator(
-      appRouter: DI.resolve<AppRouter>(),
-      child: AppPage(
+    return Material(
+      child: AppCoordinator(
         appRouter: DI.resolve<AppRouter>(),
+        child: AppPage(
+          appRouter: DI.resolve<AppRouter>(),
+        ),
       ),
     );
   }

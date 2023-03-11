@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 500 500">
+  <linearGradient id="a" x1="249" x2="249" y1="627.7236" y2="421.7227" gradientTransform="translate(0 -342)" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+    <stop offset=".6292" stop-color="#fff"/>
+  </linearGradient>
+  <path fill="url(#a)" d="M149.9 309.5c0-54.7 44.4-99.1 99.1-99.1s99.1 44.4 99.1 99.1"/>
+  <path fill="#fff" d="M349.5 309.5c-.5 0-.9-.4-.9-.9-.5-53.8-44.3-97.3-98.2-97.3s-97.7 43.6-98.2 97.3c0 .5-.4.9-.9.9s-.9-.4-.9-.9c.5-54.7 45.1-99.1 100-99.1s99.5 44.4 100 99.1c0 .5-.4.9-.9.9z" opacity=".55"/>
+  <linearGradient id="b" x1="416.4482" x2="152.9206" y1="591.95" y2="591.95" gradientTransform="translate(0 -342)" gradientUnits="userSpaceOnUse">
+    <stop offset=".3232" stop-color="#fff" stop-opacity="0"/>
+    <stop offset=".8699" stop-color="#fff"/>
+  </linearGradient>
+  <path fill="url(#b)" d="M374.8 318.9c-3.8 0-6.9-3.1-7.1-7-3.6-64.5-54.9-115.9-117.5-115.9s-113.9 51.4-117.4 115.9c-.2 4-3.4 7-7.2 7-4.1 0-7.4-3.6-7.2-7.9 3.9-72.4 61.5-130 131.7-130S378 238.7 381.9 311c.3 4.3-3 7.9-7.1 7.9z"/>
+  <path fill="#fff" d="M304.4 309.6c0-1.5-1-2.7-2.5-3-16.3-2.7-36.1-5.9-43-6.6-2.1-1.9-4.8-3.1-7.8-3.2-6.5-.1-11.8 5-12 11.5-.1 6.5 5 11.8 11.5 12 3 .1 5.8-1.1 7.9-2.9 6.9-.5 26.7-2.9 43.2-5 1.6-.1 2.7-1.4 2.7-2.8z"/>
+</svg>

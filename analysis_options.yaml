@@ -12,8 +12,6 @@ analyzer:
 
 linter:  
   rules:
-    always_put_control_body_on_new_line: true
-    always_put_required_named_parameters_first: true
     always_use_package_imports: true
     avoid_double_and_int_checks: true
     avoid_escaping_inner_quotes: false
@@ -26,17 +24,14 @@ linter:
     depend_on_referenced_packages: false
     library_private_types_in_public_api: false
     literal_only_boolean_expressions: true
-    lowercase_with_underscores: true
     only_throw_errors: true
     prefer_foreach: true
     prefer_null_aware_method_calls: true
     prefer_single_quotes: true
-    sort_constructors_first: true
-    sort_pub_dependencies: false
-    sort_unnamed_constructors_first: true
     unawaited_futures: true
     use_if_null_to_convert_nulls_to_bools: true
     use_is_even_rather_than_modulo: true
     use_key_in_widget_constructors: true
     use_named_constants: true
+    prefer_const_constructors: false
     use_to_and_as_if_applicable: true
