@@ -3,10 +3,12 @@ import 'package:airly_monitor/data/models/installation.dart';
 import 'package:airly_monitor/data/repositories/user_installations/user_installations_repository.dart';
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:injectable/injectable.dart';
 
 part 'observed_state.dart';
 part 'observed_cubit.freezed.dart';
 
+@injectable
 class ObservedCubit extends Cubit<ObservedState> {
   ObservedCubit(this._userInstallationsRepository)
       : super(const ObservedState.initial());

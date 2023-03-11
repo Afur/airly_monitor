@@ -7,9 +7,6 @@ import 'package:airly_monitor/data/responses/response_status.dart';
 import 'package:injectable/injectable.dart';
 
 @Injectable(as: NearbyInstallationsRepository)
-@lazySingleton
-/// It's a wrapper around the API provider that calls the API provider's `receiveInstallations` method
-/// and returns the result
 class RemoteNearbyInstallationsRepository extends NearbyInstallationsRepository {
   RemoteNearbyInstallationsRepository(this._apiProvider);
 
